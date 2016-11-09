@@ -20,16 +20,23 @@ const SHOW_SUPPORT = true;
  *  You can pass a single object or an array of themes
  */
 
-storiesOf('Without addon', module)
+storiesOf('Non Material', module)
     .add('Html', () => (
       <ThemeProvider>
           <div>
-              <p>Lorem ipsum</p>
-              <h3> Subtitle</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, temporibus veniam molestias, <span>totam blanditiis odio autem?</span> Ratione et inventore impedit aspernatur, <a href="#nowhere">distinctio</a>, tenetur necessitatibus dolorem dolore saepe odit repudiandae eligendi.</p>
-              <div style={{width: 50, height: 50, borderStyle: 'solid'}}>
-                  in border
+              <h3> I'm plain HTML </h3>
+              <p>But i'm styled via CSS {'<style scoped> element </style>'}. I'm support <a href="#nowhere">links styling</a> and you can hightlight me by <span> {'<span> tags </span>'} </span> Try to select me or put to...</p>
+              <div
+                 style={{
+                      width: 150,
+                      height: 50,
+                      borderStyle: 'solid',
+                      padding: 16,
+                      margin: 20,
+                 }}>
+                  ...box with a border
               </div>
+              You can pass different themes via props and set your own CSS rules via setCSS function
           </div>
       </ThemeProvider>
     ))
@@ -53,17 +60,24 @@ storiesOf('Material-UI', module)
       </div>
     ))
     .addDecorator(muiTheme(['Light Theme', 'Dark Theme', greyTheme]))
-    .add('Text', () => (
+    .add('HTML', () => (
       <ThemeProvider>
           <div>
-              <p>Lorem ipsum</p>
-              <h3> Subtitle</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, temporibus veniam molestias, <span>totam blanditiis odio autem?</span> Ratione et inventore impedit aspernatur, <a href="#nowhere">distinctio</a>, tenetur necessitatibus dolorem dolore saepe odit repudiandae eligendi.</p>
-              <div style={{width: 50, height: 50, borderStyle: 'solid'}}>
-                  in border
+              <h3> I'm plain HTML inside of Material-UI APP </h3>
+              <p>But i'm styled via CSS {'<style scoped> element </style>'}. I'm support <a href="#nowhere">links styling</a> and you can hightlight me by <span> {'<span> tags </span>'} </span> Try to select me or put to...</p>
+              <div
+                 style={{
+                      width: 150,
+                      height: 50,
+                      borderStyle: 'solid',
+                      padding: 16,
+                      margin: 20,
+                 }}>
+                  ...box with a border
               </div>
+              Select different themes in bottom panel or edit color in the Theme Editor - I follow theme colors
           </div>
-     </ThemeProvider>
+      </ThemeProvider>
     ))
     .add('React Components', () => (
       <ThemeProvider
@@ -101,7 +115,7 @@ class ThemedComponent extends React.Component {
         };
         return (
             <div style={style}>
-                I'm <span style={{color: palette.primary1Color}}>manually</span> themed Component
+                I'm <span style={{color: palette.primary1Color}}>manually</span> themed React Component. I dont have Material-UI components but I need the muiTheme to show my own ones! Try me with different themes!
             </div>
         );
     }

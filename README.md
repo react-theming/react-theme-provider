@@ -10,7 +10,7 @@ While you developing your `Themed React Components` you may find usefull [storyb
 You may want to use React Theme Provider in some cases:
 
 ### if you **don't use** Material-UI:
-1. Provide to your React Components theme data via `context`. You don't need to have Material-UI in dependencies if you just want to pass your [created](https://sm-react.github.io/storybook-addon-material-ui) theme to your non Material-UI components.
+1. Provide the `theme data` to your React Components via `context`. You don't need to have Material-UI in dependencies if you just want to pass your [created](https://sm-react.github.io/storybook-addon-material-ui) theme to your non Material-UI components.
 2. Add style to your `html` elements - it will be based on your theme settings.
 3. **Switch** your created themes via API.
 
@@ -32,6 +32,7 @@ Explore this live demo project:
   themes={[greyTheme, altTheme]}
   themeInd={1}
   override
+  setCSS={setCSS}
 >
   <ThemedComponent />
 </ThemeProvider>
@@ -42,11 +43,33 @@ Explore this live demo project:
 
 `themeInd` - to set the current theme from `themes`.  **not required**
 
-override - if you use it inside of `MuiThemeProvider` (Material-UI) it will override theme.  **not required**
+`override` - if you use it inside of `MuiThemeProvider` (Material-UI) it will override theme.  **not required**
 
-setCSS - your custom CSS style function. You can set your own rules for CSS styling based on the theme setting.  **not required**
+`setCSS` - your custom CSS style function. You can set your own rules for CSS styling based on the theme setting.  **not required**
 
 >if you use it without any props **inside** the `MuiThemeProvider`, it will provide CSS style for your `html` elements based on the current theme
 >if you use it without any props **outside** the `MuiThemeProvider`, t will provide CSS style for your `html` elements based on the default theme **and** pass this theme to your components via context same way as `MuiThemeProvider`.
 
+by default you will have follow CSS settings:
 
+```CSS
+div {
+    color: ${palette.textColor};
+    background-color: ${palette.canvasColor};
+    border-width: 1px;
+    border-color: ${palette.borderColor};
+}
+
+a {
+    color: ${palette.primary1Color};
+}
+
+span {
+    color: ${palette.accent1Color};
+}
+
+::selection {
+    background: ${palette.primary2Color};
+}
+
+```
