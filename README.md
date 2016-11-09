@@ -48,7 +48,9 @@ Explore this live demo project:
 `setCSS` - your custom CSS style function. You can set your own rules for CSS styling based on the theme setting.  **not required**
 
 >if you use it without any props **inside** the `MuiThemeProvider`, it will provide CSS style for your `html` elements based on the current theme
->if you use it without any props **outside** the `MuiThemeProvider`, t will provide CSS style for your `html` elements based on the default theme **and** pass this theme to your components via context same way as `MuiThemeProvider`.
+
+
+>if you use it without any props **outside** the `MuiThemeProvider`, it will provide CSS style for your `html` elements based on the default theme **and** pass this theme to your components via context same way as `MuiThemeProvider`.
 
 by default you will have follow CSS settings:
 
