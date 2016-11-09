@@ -9,12 +9,12 @@ While you developing your `Themed React Components` you may find usefull [storyb
 
 You may want to use React Theme Provider in some cases:
 
-- if you **don't use** Material-UI:
+### if you **don't use** Material-UI:
 1. Provide to your React Components theme data via `context`. You don't need to have Material-UI in dependencies if you just want to pass your [created](https://sm-react.github.io/storybook-addon-material-ui) theme to your non Material-UI components.
 2. Add style to your `html` elements - it will be based on your theme settings.
 3. **Switch** your created themes via API.
 
-- if you **use** Material-UI:
+### if you **use** Material-UI:
 1. Add simple style to you non material `html` elements. They will have same appearance with the marerial ones if wrapped in this provider.
 2. Override some part of your app with another theme.
 3. Have an API to switch themes on the client side.
