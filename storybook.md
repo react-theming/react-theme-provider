@@ -1,2 +1,2 @@
 ## Deploy 
-Storybook deployed to: [https://sm-react.github.io/storybook-addon-material-ui](https://sm-react.github.io/storybook-addon-material-ui)
+Storybook deployed to: [https://sm-react.github.io/react-theme-provider](https://sm-react.github.io/react-theme-provider)
