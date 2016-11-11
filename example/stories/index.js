@@ -25,7 +25,7 @@ storiesOf('Non Material', module)
       <ThemeProvider>
           <div>
               <h3> I'm plain HTML </h3>
-              <p>But i'm styled via CSS {'<style scoped> element </style>'}. I'm support <a href="#nowhere">links styling</a> and you can hightlight me by <span> {'<span> tags </span>'} </span> Try to select me or put to...</p>
+              <p>But i'm styled via CSS {'<style> element </style>'}. I'm support <a href="#nowhere">links styling</a> and you can hightlight me by <span> {'<span> tags </span>'} </span> Try to select me or put to...</p>
               <div
                  style={{
                       width: 150,
@@ -43,7 +43,7 @@ storiesOf('Non Material', module)
     .add('React Components', () => (
       <ThemeProvider
         themes={[greyTheme, altTheme]}
-        themeInd={1}
+        themeInd={0}
         override
       >
           <ThemedComponent />
@@ -64,7 +64,7 @@ storiesOf('Material-UI', module)
       <ThemeProvider>
           <div>
               <h3> I'm plain HTML inside of Material-UI APP </h3>
-              <p>But i'm styled via CSS {'<style scoped> element </style>'}. I'm support <a href="#nowhere">links styling</a> and you can hightlight me by <span> {'<span> tags </span>'} </span> Try to select me or put to...</p>
+              <p>But i'm styled via CSS {'<style> element </style>'}. I'm support <a href="#nowhere">links styling</a> and you can hightlight me by <span> {'<span> tags </span>'} </span> Try to select me or put to...</p>
               <div
                  style={{
                       width: 150,

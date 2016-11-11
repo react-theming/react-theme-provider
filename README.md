@@ -1,13 +1,14 @@
 #  React Theme Provider
 https://github.com/sm-react/react-theme-provider
 
-*now it is under development, but you can checkout [live demo](https://sm-react.github.io/react-theme-provider)*
 
-## Motivation
+## What is React Theme Provider?
+A generic theme provider and (very) simple CSS styler
+*now it is under development, see [live demo](https://sm-react.github.io/react-theme-provider), and this README*
 
-While you developing your `Themed React Components` you may find usefull [storybook-addon-material-ui](https://github.com/sm-react/storybook-addon-material-ui) project to have environment for theme creating. In oder to use your themed components outside `storybook` with your custom themes, try this Theme Provider.  
+![scheme](\doc\ThemeProvider.png)
 
-You may want to use React Theme Provider in some cases:
+Use **React Theme Provider** in follow cases:
 
 ### if you **don't use** Material-UI:
 1. Provide the `theme data` to your React Components via `context`. You don't need to have Material-UI in dependencies if you just want to pass your [created](https://sm-react.github.io/storybook-addon-material-ui) theme to your non Material-UI components.
@@ -19,11 +20,48 @@ You may want to use React Theme Provider in some cases:
 2. Override some part of your app with another theme.
 3. Have an API to switch themes on the client side.
 
+### What is Theme?
+It's just plain javascript object, typically with two levels of nesting. 
+
+Primer:
+```
+const greyTheme = {
+    themeName: 'Grey Theme',
+    themeFile: 'greyTheme.json',
+    palette: {
+        primary1Color: '#00bcd4',
+        alternateTextColor: '#4a4a4a',
+        canvasColor: '#616161',
+        textColor: '#bdbdbd',
+        secondaryTextColor: 'rgba(255, 255, 255, 0.54)',
+        disabledColor: '#757575',
+        accent1Color: '#607d8b',
+    },
+};
+
+```
+You can develop your own themes with this [tool](https://github.com/sm-react/storybook-addon-material-ui) (or see [Live Demo](https://sm-react.github.io/storybook-addon-material-ui))
+
+### What is CSSrule?
+
+a string containing CSS rules. Typically it's a *template string* with passed theme props:
+
+```
+div {
+    color: ${palette.textColor};
+    background-color: ${palette.canvasColor};
+}
+
+a {
+    color: ${palette.primary1Color};
+}
+```
 
 ## Demo
 Explore this live demo project:
 
 [![Live demo](https://img.shields.io/badge/Live%20Demo-%20Storybook-brightgreen.svg)](https://sm-react.github.io/react-theme-provider)
+
 
 ## API
 
@@ -55,23 +93,43 @@ Explore this live demo project:
 by default you will have follow CSS settings:
 
 ```CSS
-div {
+.${className} div {
     color: ${palette.textColor};
     background-color: ${palette.canvasColor};
     border-width: 1px;
     border-color: ${palette.borderColor};
 }
 
-a {
+.${className} a {
     color: ${palette.primary1Color};
 }
 
-span {
+.${className} span {
     color: ${palette.accent1Color};
 }
 
-::selection {
+.${className} ::selection {
     background: ${palette.primary2Color};
 }
 
 ```
+## Usage
+
+- install
+```
+npm i react-theme-provider --save
+```
+
+- import
+```
+import ThemeProvider from 'react-theme-provider';
+```
+
+- wrap
+```
+<ThemeProvider>
+  <YourThemedComponentOrPlainHTML />
+</ThemeProvider>
+
+```
+
