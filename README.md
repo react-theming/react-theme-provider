@@ -6,7 +6,7 @@ https://github.com/sm-react/react-theme-provider
 A generic theme provider and (very) simple CSS styler
 *now it is under development, see [live demo](https://sm-react.github.io/react-theme-provider), and this README*
 
-![scheme](\doc\ThemeProvider.png)
+![scheme](/doc/ThemeProvider.png)
 
 Use **React Theme Provider** in follow cases:
 
