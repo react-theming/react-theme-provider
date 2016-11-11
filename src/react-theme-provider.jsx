@@ -46,7 +46,7 @@ export default class ThemeProvider extends React.Component {
         return (
           <div className={this.className}>
             {this.CSSLink(CSSstyles)}
-            {this.props.children}
+            <div>{this.props.children}</div>
           </div>
         );
     }
@@ -63,6 +63,8 @@ function setCSS(palette, className) {
     background-color: ${palette.canvasColor};
     border-width: 1px;
     border-color: ${palette.borderColor};
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
 }
 
 .${className} a {

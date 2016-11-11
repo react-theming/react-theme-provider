@@ -4,18 +4,19 @@ https://github.com/sm-react/react-theme-provider
 
 ## What is React Theme Provider?
 A generic theme provider and (very) simple CSS styler
+
 *now it is under development, see [live demo](https://sm-react.github.io/react-theme-provider), and this README*
 
 ![scheme](/doc/ThemeProvider.png)
 
-Use **React Theme Provider** in follow cases:
+### Use **React Theme Provider** in follow cases:
 
-### if you **don't use** Material-UI:
+#### if you **don't use** Material-UI:
 1. Provide the `theme data` to your React Components via `context`. You don't need to have Material-UI in dependencies if you just want to pass your [created](https://sm-react.github.io/storybook-addon-material-ui) theme to your non Material-UI components.
 2. Add style to your `html` elements - it will be based on your theme settings.
 3. **Switch** your created themes via API.
 
-### if you **use** Material-UI:
+#### if you **use** Material-UI:
 1. Add simple style to you non material `html` elements. They will have same appearance with the marerial ones if wrapped in this provider.
 2. Override some part of your app with another theme.
 3. Have an API to switch themes on the client side.
@@ -47,12 +48,12 @@ You can develop your own themes with this [tool](https://github.com/sm-react/sto
 a string containing CSS rules. Typically it's a *template string* with passed theme props:
 
 ```
-div {
+.themed div {
     color: ${palette.textColor};
     background-color: ${palette.canvasColor};
 }
 
-a {
+.themed a {
     color: ${palette.primary1Color};
 }
 ```
@@ -70,7 +71,7 @@ Explore this live demo project:
   themes={[greyTheme, altTheme]}
   themeInd={1}
   override
-  setCSS={setCSS}
+  setCSS={CSSrule}
 >
   <ThemedComponent />
 </ThemeProvider>
@@ -132,4 +133,6 @@ import ThemeProvider from 'react-theme-provider';
 </ThemeProvider>
 
 ```
+
+more examples see in [![Live demo](https://img.shields.io/badge/Live%20Demo-%20Storybook-brightgreen.svg)](https://sm-react.github.io/react-theme-provider)
 
