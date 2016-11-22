@@ -1,6 +1,6 @@
 {
   "name": "react-theme-provider",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The part of 'React Theming' project",
   "main": "dist/index.js",
   "scripts": {
