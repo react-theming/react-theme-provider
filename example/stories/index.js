@@ -154,7 +154,6 @@ const contextTypes = {
 class ThemedComponent extends React.Component {
     render() {
         const {palette} = this.context.muiTheme;
-//        console.log(palette);
         const style = {
             color: palette.textColor,
             backgroundColor: palette.canvasColor,
