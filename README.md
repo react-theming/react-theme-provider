@@ -17,7 +17,7 @@ A generic theme provider and (very) simple CSS styler
 3. **Switch** your created themes via API.
 
 #### if you **use** Material-UI:
-1. Add simple style to you non material `html` elements. They will have same appearance with the marerial ones if wrapped in this provider.
+1. Add simple style to you non material `html` elements. They will have same appearance with the material ones if wrapped in this provider.
 2. Override some part of your app with another theme.
 3. Have an API to switch themes on the client side.
 
