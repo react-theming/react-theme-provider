@@ -5,7 +5,7 @@ https://github.com/sm-react/react-theme-provider
 ## What is React Theme Provider?
 A generic theme provider and (very) simple CSS styler
 
-*now it is under development, see [live demo](https://sm-react.github.io/react-theme-provider), and this README*
+*now it is under development, see [live demo](https://sm-react.github.io/storybook-boilerplate/?theme-ind=0&theme-sidebar=false&theme-full=false&knob-Title=Welcome%20to%20React-Theming&knob-Subtitle=Storybook%20Boilerplate%20Project&selectedKind=Theme%20Switcher&selectedStory=Component&full=0&down=1&left=1&panelRight=0&downPanel=sm%2Fstorybook-addon-material-ui%2Fmaterial-panel), and this README*
 
 ![scheme](/doc/ThemeProvider.png)
 
@@ -41,7 +41,7 @@ const greyTheme = {
 };
 
 ```
-You can develop your own themes with this [tool](https://github.com/sm-react/storybook-addon-material-ui) (or see [Live Demo](https://sm-react.github.io/storybook-addon-material-ui))
+You can develop your own themes with this [tool](https://github.com/react-theming/storybook-addon-material-ui) (or see [Live Demo](https://sm-react.github.io/storybook-boilerplate/?theme-ind=0&theme-sidebar=false&theme-full=false&knob-Title=Welcome%20to%20React-Theming&knob-Subtitle=Storybook%20Boilerplate%20Project&selectedKind=Material-UI&selectedStory=Components&full=0&down=1&left=1&panelRight=0&downPanel=sm%2Fstorybook-addon-material-ui%2Fmaterial-panel))
 
 ### What is CSSrule?
 
@@ -78,7 +78,7 @@ Explore this live demo project:
 
 ```
 
-`themes` - array with themes created in [storybook-addon-material-ui](https://github.com/sm-react/storybook-addon-material-ui). **not required**
+`themes` - array with themes created in [storybook-addon-material-ui](https://github.com/react-theming/storybook-addon-material-ui). **not required**
 
 `themeInd` - to set the current theme from `themes`.  **not required**
 
@@ -134,5 +134,5 @@ import ThemeProvider from 'react-theme-provider';
 
 ```
 
-more examples see in [![Live demo](https://img.shields.io/badge/Live%20Demo-%20Storybook-brightgreen.svg)](https://sm-react.github.io/react-theme-provider)
+more examples see in [![Live demo](https://img.shields.io/badge/Live%20Demo-%20Storybook-brightgreen.svg)]https://sm-react.github.io/storybook-boilerplate/?theme-ind=0&theme-sidebar=false&theme-full=false&knob-Title=Welcome%20to%20React-Theming&knob-Subtitle=Storybook%20Boilerplate%20Project&selectedKind=Theme%20Switcher&selectedStory=Component&full=0&down=1&left=1&panelRight=0&downPanel=sm%2Fstorybook-addon-material-ui%2Fmaterial-panel)
 
