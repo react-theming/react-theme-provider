@@ -1,5 +1,5 @@
 #  React Theme Provider
-https://github.com/sm-react/react-theme-provider
+https://github.com/react-theming/react-theme-provider
 
 
 ## What is React Theme Provider?
