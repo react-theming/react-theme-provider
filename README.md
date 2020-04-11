@@ -134,5 +134,5 @@ import ThemeProvider from 'react-theme-provider';
 
 ```
 
-more examples see in [![Live demo](https://img.shields.io/badge/Live%20Demo-%20Storybook-brightgreen.svg)]https://sm-react.github.io/storybook-boilerplate/?theme-ind=0&theme-sidebar=false&theme-full=false&knob-Title=Welcome%20to%20React-Theming&knob-Subtitle=Storybook%20Boilerplate%20Project&selectedKind=Theme%20Switcher&selectedStory=Component&full=0&down=1&left=1&panelRight=0&downPanel=sm%2Fstorybook-addon-material-ui%2Fmaterial-panel)
+more examples see in [![Live demo](https://img.shields.io/badge/Live%20Demo-%20Storybook-brightgreen.svg)](https://sm-react.github.io/storybook-boilerplate/?theme-ind=0&theme-sidebar=false&theme-full=false&knob-Title=Welcome%20to%20React-Theming&knob-Subtitle=Storybook%20Boilerplate%20Project&selectedKind=Theme%20Switcher&selectedStory=Component&full=0&down=1&left=1&panelRight=0&downPanel=sm%2Fstorybook-addon-material-ui%2Fmaterial-panel)
 
