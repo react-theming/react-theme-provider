@@ -73,7 +73,7 @@
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.3.0",
     "sass-loader": "^4.0.2",
-    "shelljs": "^0.7.3",
+    "shelljs": "^0.8.5",
     "sinon": "^1.17.3",
     "storybook-addon-material-ui": "^0.7.2",
     "style-loader": "^0.13.1"
