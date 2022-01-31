@@ -67,7 +67,7 @@
     "jsdom": "^9.5.0",
     "material-ui": "^0.16.0",
     "mocha": "^3.0.2",
-    "node-sass": "^3.10.0",
+    "node-sass": "^4.13.1",
     "raw-loader": "^0.5.1",
     "react": "^15.3.0",
     "react-addons-test-utils": "^15.0.0",
